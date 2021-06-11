@@ -2,37 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+#sec2{
+  animation-duration: 3s;
+  animation-name: wiggle;
+  background-size: cover;
+  background-image: url(https://animalhaven.org/wp-content/uploads/2015/12/dog-and-cat-banner-2.png);
+  background-repeat: no-repeat;
+  min-height: 700px;
 }
 
-.App-link {
-  color: #61dafb;
+
+#sec2 .text2{
+  padding-top: 200px;
+  padding-left: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header{
+  position:absolute;
+  top : 750px;
+  width: 100%;
+  background-color:rgb(244,236,237);
+
+ 
+}
+
+#sec10{
+  position:absolute;
+  top : 920px;
+  width: 100%;
+  background-color:rgb(209,172,127);
+
+}
+
+.navbar {
+  background-color: rgb(244,236,237)  ;
 }

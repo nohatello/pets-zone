@@ -1,0 +1,16 @@
+#cart-icon i {
+    font-size: 24px;
+    color: rgb(119, 118, 118);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#cart-icon span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#cart-icon i:hover{
+    color:rgb(2, 2, 2);
+}
