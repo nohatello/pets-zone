@@ -17,13 +17,22 @@ export default class Services extends React.Component {
 
   render() {
     return (
-      <div style={{ backgroundColor: "rgb(209,172,127)", height: "200vh" }}>
+      <div
+        className="services"
+        style={{ backgroundColor: "rgb(244,236,237)", height: "180vh" }}
+      >
         <div className="container">
-          <h1 style={{ color: "rgb(244,236,237)" }}>Services</h1>
+          <h1 style={{ color: "rgb(209,172,127)" }}>Services</h1>
 
           <div className="row">
             {this.state.services.map((service) => (
-              <div className={"col-3"} key={service.id}>
+              <div
+                style={{
+                  paddingBottom: "17px",
+                }}
+                className={"col-3"}
+                key={service.id}
+              >
                 <ServiceItem service={service} />
               </div>
             ))}

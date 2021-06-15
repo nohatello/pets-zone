@@ -1,6 +1,7 @@
 import "./App.css";
 import { NavBar } from "./Component/NavBar";
 import { Home } from "./pages/Home";
+import { Footer } from "./Component/Footer";
 import Cart from "./pages/Cart";
 import Service from "./pages/Service";
 import Services from "./pages/Services";
@@ -21,6 +22,8 @@ function App() {
             <Route path="/cart" component={Cart} />
           </div>
         </div>
+
+        <Footer />
       </Router>
     </Provider>
   );

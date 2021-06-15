@@ -14,7 +14,7 @@ export default function ServiceItem(props) {
         <a
           href={"/services/" + service.id}
           className="btn "
-          style={{ backgroundColor: "rgb(209,172,127)" }}
+          style={{ backgroundColor: "rgb(244,236,237)" }}
         >
           Details
         </a>

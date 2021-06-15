@@ -1,41 +1,51 @@
 .App {
   text-align: center;
 }
+*{
+  font-family: Marker Felt, fantasy	;
+}
 
 
 
-@keyframes wiggle {
-  0%, 7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
+@keyframes fontbulger {
+  0% {
+    font-size: 10px;
   }
   30% {
-    transform: rotateZ(6deg);
+    font-size: 15px;
   }
-  35% {
-    transform: rotateZ(-4deg);
+  100% {
+    font-size: 12px;
   }
-  40%, 100% {
-    transform: rotateZ(0);
-  }
+}
+@keyframes clearly {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 
 #sec2{
   animation-duration: 3s;
-  animation-name: wiggle;
+  animation-name: clearly;
   background-size: cover;
   background-image: url(https://animalhaven.org/wp-content/uploads/2015/12/dog-and-cat-banner-2.png);
   background-repeat: no-repeat;
-  min-height: 700px;
+  height: 700px;
+}
+
+.service{
+  animation-duration: 2s;
+  animation-name: fontbulger;
+}
+
+.services{
+  animation-duration: 2s;
+  animation-name: fontbulger;
+}
+
+.cart{
+  animation-duration: 2s;
+  animation-name: fontbulger;
 }
 
 
@@ -45,18 +55,14 @@
 }
 
 header{
-  position:absolute;
-  top : 750px;
-  width: 100%;
+  
   background-color:rgb(244,236,237);
 
  
 }
 
 #sec10{
-  position:absolute;
-  top : 920px;
-  width: 100%;
+
   background-color:rgb(209,172,127);
 
 }

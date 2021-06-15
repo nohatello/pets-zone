@@ -7,8 +7,20 @@ function CartIcon(Props) {
   return (
     <div id="cart-icon">
       <Link to="/cart">
-        <i className="fa fa-shopping-cart"></i>
-        <span className="badge bg-danger">{Props.totalQuantity}</span>
+        <i
+          style={{
+            paddingRight: "30px",
+          }}
+          className="fa fa-shopping-cart"
+        ></i>
+        <span
+          style={{
+            marginRight: "30px",
+          }}
+          className="badge bg-danger"
+        >
+          {Props.totalQuantity}
+        </span>
       </Link>
     </div>
   );

@@ -5,7 +5,12 @@ import CartIcon from "./CartIcon.js";
 
 export const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light ">
+    <nav
+      style={{
+        paddingLeft: "30px",
+      }}
+      className="navbar navbar-expand-lg navbar-light "
+    >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Pets Zone{" "}

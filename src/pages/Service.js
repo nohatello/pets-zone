@@ -39,16 +39,23 @@ class Service extends React.Component {
     const quantity = this.state.quantity;
 
     return (
-      <div style={{ backgroundColor: "rgb(209,172,127)", height: "100vh" }}>
+      <div
+        className="service"
+        style={{
+          paddingTop: "30px",
+          backgroundColor: "rgb(209,172,127)",
+          height: "100vh",
+        }}
+      >
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-8">
               <img
                 style={{ height: "100%", width: "100%" }}
                 src={service.image}
               />
             </div>
-            <div className="col-6">
+            <div className="col-4">
               <h1>{service.name}</h1>
               <br />
 
